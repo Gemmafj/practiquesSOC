@@ -1,0 +1,51 @@
+﻿h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;    
+}
+
+h2{
+    font: 30px sans-serif bold;
+}
+
+header, section, footer, aside, nav, article{
+    border: 1px solid black;
+}
+
+body{
+    text-align: center;
+}
+
+header{
+      color: black;
+}
+
+.zen{
+    width: 50%;
+}
+
+.agrupar{
+    width: 70%;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.header{
+    background: #fc5c65;
+    border: 1px solid #eb3b5a;
+    padding: 20px;
+}
+
+.menu{
+    background: darkgray;
+    padding: 5px 15px;
+}
+ /*revisar
+.menu li{
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+        
+}
+
+
