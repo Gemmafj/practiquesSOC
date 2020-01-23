@@ -1,51 +1,75 @@
-﻿h1 {
-    font-size: 50px;
+h1 {
+    font-size: 20px;
     font-family: sans-serif;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 h2{
-    font: 30px sans-serif bold;
+    font: bold 14px sans-serif;
 }
 
-header, section, footer, aside, nav, article{
-    border: 1px solid black;
+header, section, footer, aside, nav, article, hgroup{
+    display: block
 }
 
 body{
     text-align: center;
-}
-
-header{
-      color: black;
-}
-
-.zen{
-    width: 50%;
-}
+} 
 
 .agrupar{
-    width: 70%;
-    margin: 15px auto;
-    padding: 15px;
+    width: 960px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid black
 }
 
-.header{
-    background: #fc5c65;
-    border: 1px solid #eb3b5a;
-    padding: 20px;
+
+.cabecera{
+      background: rgb(238, 233, 233);
+      padding: 20px;
+      border: 1px solid #999999;
 }
+
+.cabecera h1{
+    text_align: left;
+}
+
 
 .menu{
-    background: darkgray;
+    background: grey;
     padding: 5px 15px;
+    text_align: left;
 }
- /*revisar
+
+
 .menu li{
     list-style: none;
     padding: 5px;
     font: bold 14px verdana;
-        
+    display: inline-block;
+
 }
+
+.seccion{
+    border: 1px solid black;
+    background: grey;
+    width: 60%;
+    float: left;
+    margin: 20px 0;
+}
+
+.columna{
+    width:: 30%;
+    border: 1px solid black;
+    float: left;
+    margin:20px 0;
+}
+
+.pie{
+    clear:both;
+}
+
+
+
 
 
