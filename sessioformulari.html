@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="">
+
+   <fieldset>
+        <legend><i><b>Dades personals</i></b></legend>
+        <p>Nom: <input type="text" name="nom"></p>
+        <p>Cognoms: <input type="text" name="cognoms"></p>
+        <p>CP: <input type="text" required pattern="[0-9] {5}" name="cp"></p>
+        <p>CP: <input type="text" required pattern="[0-9] {5}" name="cp" size="4" maxlength="5"></p>
+        <p>Provincia: <input type="text" readonly name="provincia" value="Girona"> </p>
+
+    </fieldset>
+<br>
+    <fieldset>
+        <legend><i><b>Dades de contacte</i></b></legend>
+        <p>Telèfon: <input type="text" required pattern="[0-9] {9}" name="tel" size="6" maxlength="9"></p>
+        <p>e-mail: 
+            <input type="email" name="mail"required>
+            <input type="submit" value="OK">
+    </fieldset>
+<br>   
+    <fieldset>
+        <legend><i><b> Comanda</i></br></legend>
+        Talla: <br>
+        <br>
+        <input type="radio" name="Talla" value="S">   S <br>
+        <input type="radio" name="Talla" value="M">   M <br>
+        <input type="radio" name="Talla" value="L" checked>   L <br>
+        <input type="radio" name="Talla" value="XL">  XL <br>
+        <p>Quantitat: <input type="text" name="quantitat" size="3" value=1></p>
+
+        <br>
+
+       Observacions:<br>
+        <textarea rows="4" cols="30"></textarea>
+
+    </fieldset>
+<br>
+    <fieldset>
+        <legend><i><b>Navegador</i></b></legend>
+        <p>Quin navegador fas servir?</p>
+            <select>
+                <option value="1"> Internet Explorer </option>
+                <option value="2"> Firefox </option>
+                <option value="3" Selected > Chrome </option> 
+            </select> 
+
+            <br>
+           
+            <br>
+
+            <p>Serveis:
+                <input type="checkbox" name="n1" >  ERP
+                <input type="checkbox" name="n1" >  CRM
+                <input type="checkbox" name="n1" > FORMACIÓ  
+            </p>
+                
+    </fieldset>
+<br>
+<br>
+    <fieldset>
+        <p>Tipus empresa:
+            <input type="text" list="tipusempresa">
+            <datalist id="tipusempresa"> <!-dona opcions a mesura que escrius lletres>
+                <option value="SA"></option>
+                <option value="SL"></option>
+                <option value="SC"></option>
+            </datalist>
+
+        </p>
+
+    </fieldset>
+<br>
+    <fieldset>
+        <p> Quin és el teu color preferit?</p>
+        <input type="color">
+    </fieldset>
+
+</form>
+    
+</body>
+</html>
