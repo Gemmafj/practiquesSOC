@@ -26,6 +26,13 @@
         <p>e-mail: 
             <input type="email" name="mail"required>
             <input type="submit" value="OK">
+            
+        <form action="">
+                <p>Web: <input type="url" name="web"> 
+                    <input type="submit" name="ok"></p>
+               
+        </form>
+        
     </fieldset>
 <br>   
     <fieldset>
@@ -37,7 +44,7 @@
         <input type="radio" name="Talla" value="L" checked>   L <br>
         <input type="radio" name="Talla" value="XL">  XL <br>
         <p>Quantitat: <input type="text" name="quantitat" size="3" value=1></p>
-
+        <p>Quantitat: <input type="number" name="quantitat" size="3" value=1 min=1 max=10 step=2><Quantitat:></p>
         <br>
 
        Observacions:<br>
@@ -68,6 +75,7 @@
 <br>
 <br>
     <fieldset>
+        <legend><i><b>Empresa</i></b></legend>
         <p>Tipus empresa:
             <input type="text" list="tipusempresa">
             <datalist id="tipusempresa"> <!-dona opcions a mesura que escrius lletres>
@@ -81,11 +89,32 @@
     </fieldset>
 <br>
     <fieldset>
+        <legend><i><b>Gustos</i></b></legend>
         <p> Quin és el teu color preferit?</p>
         <input type="color">
     </fieldset>
 
 </form>
+
+<br>
+
+    <fieldset>
+        <legend><i><b>Sessió 28/1/2020</i></b></legend>
+        <form action="">
+                         
+            <p>Data: <input type="date" name="dataalta"></p>
+            <p>Mes actual: <input type="month" name="mes"></p>
+            <p>Hora: <input type="time" min="11:00" max="23:00" step="900" value="11"></p>
+            <p>Setmana de vacances: <input type="week" name="setmana"></p>
+            <p>Data formulari: <input type="datetime-local"></p>
+            
+        </form>
+
+</fieldset>
+
+<!--<p>Facturació <input type="range"> nam/-->
+
+</p>
     
 </body>
 </html>
