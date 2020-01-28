@@ -98,9 +98,15 @@ time {
     color: #999;
 }
 
-.columna blockquote {
+/*.columna blockquote {
     border: 1px solid black;
     padding: 40px;
     background:whitesmoke;
     margin-bottom: 20px;
+} */
+
+.foto{
+    padding: 5px;
+    border: 1px solid black;
 }
+
