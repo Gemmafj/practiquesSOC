@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    <p><button><img src="inici.png" alt="Enviar" width="50" height="50">Torna a home</button></p>
+
 <form action="">
 
    <fieldset>
@@ -17,7 +19,9 @@
         <p>CP: <input type="text" required pattern="[0-9] {5}" name="cp"></p>
         <p>CP: <input type="text" required pattern="[0-9] {5}" name="cp" size="4" maxlength="5"></p>
         <p>Provincia: <input type="text" readonly name="provincia" value="Girona"> </p>
-
+        <p><button onclick="alert('Acció de Javascript')"> Faci click aquí</button>  <input type="reset"></p>
+        <p><button disabled> No funciona</button></p>
+        <p><button><img src="inici.png" alt="Inici" width="50" height="50">Enviar</button></p>
     </fieldset>
 <br>
     <fieldset>
@@ -30,6 +34,8 @@
         <form action="">
                 <p>Web: <input type="url" name="web"> 
                     <input type="submit" name="ok"></p>
+        
+        <input type="password"> Pasword
                
         </form>
         
@@ -52,6 +58,25 @@
 
     </fieldset>
 <br>
+
+<form action="">
+    <fieldset>
+        <legend><i><b> Tipus targeta</i></br></legend>
+
+        <label for="idxtext01">Nº Visa</label>
+        <input type="text" id="idxtext"><br>
+
+        <label for="cash1">Visa</label>
+        <input type="radio" name="cash" id="cash1"><br>
+        <label for="cash2">American Expréss</label>
+        <input type="radio" name="cash" id="cash2"><br>
+        <label for="cash3">Master Card</label>
+        <input type="radio" name="cash" id="cash3"><br>
+        
+    </fieldset>
+<br>
+
+</form>
     <fieldset>
         <legend><i><b>Navegador</i></b></legend>
         <p>Quin navegador fas servir?</p>
@@ -61,10 +86,7 @@
                 <option value="3" Selected > Chrome </option> 
             </select> 
 
-            <br>
-           
-            <br>
-
+        <br>
             <p>Serveis:
                 <input type="checkbox" name="n1" >  ERP
                 <input type="checkbox" name="n1" >  CRM
