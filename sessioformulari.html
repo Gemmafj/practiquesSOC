@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        span{margin-left: 18px;}
+    </style>
+    <script type="text/javascript">
+        function mostrar(seleccion) {
+            document.getElementById("valor2").innerHTML = seleccion;
+        }
+    </script>
 </head>
 <body>
 
@@ -100,7 +108,7 @@
         <legend><i><b>Empresa</i></b></legend>
         <p>Tipus empresa:
             <input type="text" list="tipusempresa">
-            <datalist id="tipusempresa"> <!-dona opcions a mesura que escrius lletres>
+            <datalist id="tipusempresa"> <!--dona opcions a mesura que escrius lletres -->
                 <option value="SA"></option>
                 <option value="SL"></option>
                 <option value="SC"></option>
@@ -132,7 +140,25 @@
             
         </form>
 
-</fieldset>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><i><b>Cursor</i></b></legend>
+        Quantitat sol.licitada: <br>
+        <input name="cursor" type="range" min="1" max="5" value="3" step="1" 
+        style="margin-top: 10px; width: 155px;" 
+        onchange="mostrar(this.value)"><br>
+        <div style="margin-top: -2px;">
+            <span style="margin-left: 2px;">1</span>
+            <span>2</span >
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+<p>Ha escollit...<span id="valor2">3</span></p>
+        </div>
+    </fieldset>
 
 <!--<p>Facturació <input type="range"> nam/-->
 
