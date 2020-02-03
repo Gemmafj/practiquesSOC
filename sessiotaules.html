@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sessió Taules</title>
+
+    <style>
+
+        table {border: 5px solid black} /*borde*/
+        table {width: 250px;} /*amplada*/
+        table {height: 250px;} /*açada*/
+        table {border-collapse: collapse;} /* S'usa perquè s'ajuntin les línies*/
+        table {margin-left: auto;}
+        table {margin-right: auto;}
+        table {text-align: center;}
+        table {background-color: #EAE3F7}
+      
+   
+             /*  Es pot posar simplificat així:
+          table {
+             border: 1px solid black;
+             width: 250px;
+             height: 250px
+             border-collapse: collapse; etc...
+                 }
+             */
+
+        td{ border: 1px solid black;
+            vertical-align: center;
+            padding-left: 8px;
+            
+        }
+
+        .color {background: #ff8c00;}
+
+        colgroup {background-color: #D780F3;
+                    text-align: center;
+        }
+
+        #columnes {background-color: #f3b7e6;
+                   text-align: center; 
+        }
+
+
+    </style>
+
+</head>
+<body>
+  <table>
+      <tr>
+          <td class="color">1</td>
+          <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td><td class="color">4</td>
+        </tr>
+  </table>
+
+    <br><br>
+
+<!-- Alineació horitzontal -->
+    <table>
+        <tr>
+            <td class="color" style="text-align: left;">Producte 1</td>
+            <td style="text-align: center;">En Stock </td>
+            <td style="text-align: right;">3.43€</td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Producte 2</td>
+            <td style="text-align: center;"> Pendent </td>
+            <td style="text-align: right;">6.72€</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+<!-- Alineació vertical -->
+    <table>
+        <tr>
+            <td class="color" style="width:10%">1</td>
+            <td> xxxxx x xxxxx</td>
+        </tr>
+        <tr>
+            <td style="width:10%">2</td>
+            <td>xxxx xxxx x   xxxxx x xxxxx</td>
+        </tr>
+        <tr>
+            <td style="width:10%">3</td>
+            <td>xxxx xxxx x   xxxxx x xxxxx</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+<!-- Fusionar cel.les horitzontals -->
+    <table>
+        <tr>
+            <td colspan="3" style="text-align: center;"><h2>Títol de la taula</h2></td>
+        </tr>
+        <tr>
+            <td>1</td><td>2</td><td>3</td>
+        </tr>
+        <tr>
+            <td>4</td><td>5</td><td>6</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+<!-- Fusionar cel.les verticals ( per columna) -->
+     <table>
+        <tr>
+            <td rowspan="3" style="vertical-align: middle;">Títol</td>
+            <td>1</td><td>2</td>
+        </tr>
+        <tr>
+            <td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td>
+        </tr>
+
+     </table>
+    
+     <br><br>
+
+<!-- Titol de la Taula -->
+    <table border ="1px">
+        <caption>Títol  de la Taula</caption>
+        <tr>
+            <th> Atribut </th>
+            <th> Funció </th>
+        </tr>
+        <tr>
+            <th><i>Colspan</i> </th>
+            <th> Per fusionar columnes </th>
+        </tr>
+        <tr>
+            <th><i>Rowspan</i> </th>
+            <th> Per fusionar files </th>
+        </tr>
+            </table>
+
+    <br><br>
+
+<!-- Agrupar columnes ()= Marca-les en color) (per defecte a l'esquerre) -->
+   <table>
+       <colgroup span="2"></colgroup>
+        <tr>
+            <td>1</td><td>2</td><td>3</td>
+        </tr>
+        <tr>
+            <td>4</td> <td>5</td> <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td> <td>8</td> <td>9</td>
+        </tr>
+      
+    </table>
+
+    <br><br>
+
+    <!-- Agrupar columnes (= Marca-les en color) a la dreta -->
+    <table>
+        <colgroup span="1"></colgroup>
+        <colgroup id="columnes" span="2"></colgroup>
+         <tr>
+             <td>1</td><td>2</td><td>3</td>
+         </tr>
+         <tr>
+             <td>4</td> <td>5</td> <td>6</td>
+         </tr>
+         <tr>
+             <td>7</td> <td>8</td> <td>9</td>
+         </tr>
+       
+     </table>
+
+  </table>  
+</body>
+</html>
