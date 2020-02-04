@@ -39,10 +39,20 @@
                     text-align: center;
         }
 
-        #columnes {background-color: #f3b7e6;
+        #columna {background-color: #f3b7e6;
+                   text-align: center; 
+        }
+        #columna1 {background-color: #91ecd9;
+                   text-align: center; 
+        }#columna2 {background-color: #cde65e;
                    text-align: center; 
         }
 
+
+
+        /*Taula estructurada*/
+        thead {background-color: #ff8c00; font-size: 26px;}
+        tfood {font-size: 14px;}
 
     </style>
 
@@ -164,20 +174,51 @@
 
     <!-- Agrupar columnes (= Marca-les en color) a la dreta -->
     <table>
-        <colgroup span="1"></colgroup>
-        <colgroup id="columnes" span="2"></colgroup>
+        <colgroup span 1></colgroup>
+        <colgroup id="columna" span="1"></colgroup>
          <tr>
              <td>1</td><td>2</td><td>3</td>
          </tr>
-         <tr>
+        
+            <colgroup id="columna2" span="1"></colgroup>
+        
+        <tr>
              <td>4</td> <td>5</td> <td>6</td>
          </tr>
+            <colgroup id="columna3" span="1"></colgroup>
+        
          <tr>
              <td>7</td> <td>8</td> <td>9</td>
          </tr>
        
      </table>
 
-  </table>  
+     <br><br>
+
+<!-- Estructura d'una taula, ordre: 1r capçalera, després peu i per acabar el cos de la taula -->
+     <table>
+         <thead>
+            <tr>
+                <td colspan="2" style="text-align: center;">Fusió caselles</td>
+            </tr>
+         </thead>
+
+         <tfoot>
+                <td colspan="2" style="text-align: center;"><i> W3C Working Draft 24 Juny 2020</i></td>
+         </tfoot>
+
+         <tbody>
+             <tr>
+                 <td><i>colspan</i></td>
+                 <td>Per fusionar columnes</td>
+             </tr>
+             <tr>
+                <td><i>rowspan</i></td>
+                <td>Per fusionar files</td>
+            </tr>
+         </tbody>
+     </table>
+
+   
 </body>
 </html>
