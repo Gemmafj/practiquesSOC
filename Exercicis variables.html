@@ -196,23 +196,106 @@ do {
 while (condicio);*/
 
 
-var trobat = true;
-while (trobat==false){
-    alert('entro dintre del while');
-}
+
+/* igual que el whilw pero amb do 
+
+var numeroSort = 13;
+var trobat = false;
+var repeticions = 0;
 do {
-alert('entro dintre del do while');
+    if (Math.floor(Math.random() * 100) == numeroSort)
+    {
+        trobat = true;
+    }
+else {
+repeticions++;
+    }
 }
 
-while (trobat==false);
+while (trobat==false); alert (repeticions);*/
 
 
+/*BUCLE FOR
 
-</script>
-<body>
+var text = "Els números son:";
+
+for (i = 0; i <= 5; i++) {
+
+text += " " + i;
+
+}
+
+alert(text); 
+----------------
+Exercicis 11/12 /13
+
+
+var text = "";
+for (i = 1; i <= 10; i++) {
+
+text = i;
+alert(text);
+
+}*/
+
+/* es pot fer més fàci:
+
+ for(i=1;i<=10;i++){
+     alert(i);
+ }
+
+
+for (i = 10; i >=1; i--){
+     alert(i);
+}
+*/
+
+/*for (i = 1 ; i <= 10 ; i++ ){
+    if(i % 2 == 0){
+        alert (i + " " + "Nombre parell");
+    }
+
+    else {
+        alert (i + " " +"Nombre imparell");
+        } 
+}*/
+
+        /*BUCLE DIES SETMANA
+
+for ( i = 1; i <= 7 ; i++)
+    
+switch(i) {
+    case 1:
+        alert('dilluns');
+        break;
+    case 2:
+        alert('dimarts');
+        break;
+    case 3:
+        alert('dimecres');
+        break;
+    case 4:
+        alert('dijous');
+        break;
+    case 5:
+        alert('divendres');
+        break;
+    case 6:
+        alert('dissabte');
+        break;
+    case 7:
+        alert('diumenge');
+        break;
+    default:
+        alert('no es un dia de la setmana');
+}
+*/
+
+
         
-<!--<h2>El meu primer JavaScript</h2>-->
+/*<h2>El meu primer JavaScript</h2>
 
 
-</body>
+</body>*/
+</script>
 </html>
