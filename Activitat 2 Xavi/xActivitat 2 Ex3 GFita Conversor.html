@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title> Activitat2 </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=decive-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="autor"content="Gemma Fita">
+    <meta name="keywords"content="Activitat2ex3">
+    <script type="text/css"></script>
+    
+</head>
+
+<body>
+
+    <form name="Conversor">
+        <h4>Conversor d'euros a dòlars</h4>
+        <h4>Import euros</h4> <input type="text" name="euros" size="6"><br>
+        <h4>Dòlars</h4> <input type="text" name="dolars" size="6"><br>
+        <input type="button" value="conversor" onclick="calcular()">
+    </form> 
+ 
+
+<script> 
+    function calcular()
+    {
+var euros= (document.Conversor.euros.value)*1;
+var tot = euros * 1.1018;
+tot = Math.round(tot * 100) / 100;
+document.Conversor.dolars.value = tot;
+
+    }
+
+</script>      
+
+    
+</body>
+</html>

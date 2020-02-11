@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graus</title>
+</head>
+<body>
+    <form name="Conversio">
+        <h4>Conversió de Graus ºC a ºF</h4>
+        <p>Graus C: <input id="celsius" size="4"></p>
+        <p>Graus F: <input id="resultat" size="5"></p>
+        <input type="button" onclick="multiplicar()" value="Calcular"/>
+    </form>
+    <script>
+    function multiplicar () {
+        var n1 = (document.Conversio.celsius.value);
+        var value = n1*32/100;
+        document.Conversio.resultat.value = value;
+    }
+    </script>
+
+</body>
+</html>
