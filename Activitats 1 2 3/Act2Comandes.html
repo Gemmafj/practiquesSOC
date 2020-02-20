@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comandes</title>
+</head>
+<body>
+<header>
+    <h1>L'hamburgueseria</h1>
+</header>
+    <h2>Som especialistes</h2>
+        <nav>
+            <ul>
+                <li><a href="rindex.html">Inici</a></li>
+                <li>Fes una comanda</li>
+
+            </ul>
+        </nav>
+<fieldset>  
+    <legend><h3><i>Fes la teva comanda:</i> </h3></legend>
+
+    <form>
+            <ul>
+                <li>Hamburguesa completa
+                    <input type="number" name="nburguer" value="0" min="0" max="10"></li> 
+                <br>
+                <li>Hamburguesa de pollastre
+                    <input type="number" name="nburguer" value="0" min="0" max="10"></li>
+                <br>
+                <li>Hamburguesa vegetariana
+                    <input type="number" name="nburguer" value="0" min="0" max="10"></li> 
+                <br>
+                <li>Hamburguesa doble
+                    <input type="number" name="nburguer" value="0" min="0" max="10"></li>
+            </ul>
+        <p><h4>Escriu les modificacions o preferències de la comanda:</h4></p>
+        <textarea rows="4" cols="60"></textarea> 
+    </form>
+
+</fieldset>
+<br>
+<fieldset>
+    <legend><h3><i>Dades de contacte</i></h3></legend>
+     <form>
+        Nom:
+        <input type="text" name="nom" size="30" required> <br><br>
+        Cognom:
+        <input type="text" name="cognom" size="30" required> <br><br>
+        Telèfon:
+        <input type="number" name="telefon" size="15" required> <br><br>
+        Correu electrònic:
+        <input type="text" name="nom" size="35"required> <br><br>
+        Ets major d'edat?  
+                <select>
+                    <option></option>
+                    <option value="1"> No </option>
+                    <option value="2"> Sí </option>
+                </select> 
+         <hr />
+             <input type="checkbox" name="info" checked />Vull rebre informació sobre ofertes. <br />
+             <input type="checkbox" name="accepta" required />Accepto les condicions d'ús del servei. <br />
+        <hr/>
+            <input type="reset" value="Esborrar" />
+            <input type="submit" value="Acceptar" />
+        </form>   
+</body>
+</html>

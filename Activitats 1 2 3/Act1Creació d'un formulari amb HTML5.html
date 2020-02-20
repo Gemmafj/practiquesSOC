@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Act 1 Formularis</title>
+  
+</head>
+
+<body>
+    <p><h1>Demana el que et ve de gust:</h1></p>
+<form method="post" action="posar el mail" autocomplete=""></form> <!--no està acabat, he de confirar queestigui ok-->
+<fieldset>
+    <form>
+             <ul>
+                <li>Hamburguesa completa
+                    <input type="number" name="nburguer" value="0" min="0" max="10">
+                </li> 
+                <br>
+                <li>Hamburguesa de pollastre
+                    <input type="number" name="nburguer" value="0" min="0" max="10">
+                </li>
+                <br>
+                <li>Hamburguesa vegetariana
+                    <input type="number" name="nburguer" value="0" min="0" max="10">
+                </li> 
+                <br>
+                <li>Hamburguesa doble
+                    <input type="number" name="nburguer" value="0" min="0" max="10">
+                </li>
+            </ul>
+        <p><h4>Escriu les modificacions o preferències de la comanda:</h4></p>
+        <textarea rows="4" cols="60"></textarea> 
+    </form>
+
+</fieldset>
+<br>
+<fieldset>
+    <h2>Dades de contacte</h2>
+     <form>
+        Nom:
+        <input type="text" name="nom" size="30" required> <br><br>
+        Cognom:
+        <input type="text" name="cognom" size="30"required> <br><br>
+        Telèfon:
+        <input type="number" name="telefon" size="15"required> <br><br>
+        Correu electrònic:
+        <input type="text" name="nom" size="35"required> <br><br>
+        Ets major d'edat?  
+                <select>
+                    <option></option><!-- perque no surti ni si ni no per defecte-->
+                    <option value="1"> No </option>
+                    <option value="2"> Sí </option>
+                </select> 
+
+<br><br>
+
+<fieldset> <p>     <input checked type="checkbox" name="n1" > Vull rebre informació sobre ofertes. 
+                   
+                   
+         <form action="../../form-result.php" method="post" target="_blank">
+
+            <p>                    
+                   
+                 <label><input type="checkbox" name="cb-terminosservicio" required> Acepto les condicions del servei</label><br>
+                      
+            
+                      
+                <p><input type="submit" value="Enviar dades"></p>
+                      
+        
+        </p>
+</fieldset>
+
+<p> 
+    <label><input type="submit" value="Acceptar" required method="post" actio="comandes@hamburgueseria.com"/>
+    <input type="reset" value="Esborrar"></p>
+     </form>
+
+</fieldset>                                 
+
+        
+</body>
+</html>
