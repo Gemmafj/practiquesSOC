@@ -1,0 +1,44 @@
+/*Selecciona els elements li descendents de les llistes de tipus especial  */
+ul.especial li {
+    display: inline;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  /* selecciona el primer fill de la llista*/
+  ul.especial li:first-child {
+    color: blue;
+  }
+  
+  /*selecciona els elements imparells de la llista */
+  ul.especial li:nth-child(odd) {
+    background-color: grey;
+  }
+  
+  /*selecciona els elements parells de la llista */
+  ul.especial li:nth-child(even) {
+    background-color: pink;
+  }
+  
+  /*selecciona el quart fill de la llista*/
+  ul.especial li:nth-of-type(4) {
+    color: white;
+  }
+  
+  /*selecciona els paragrafs que no tenen germans paràgrafs*/
+  p.especial:only-of-type {
+    background-color: grey;
+    color: #ffa0ff;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  /*Els paràgrafs en anglès apareixen en itàlic */
+  p:lang(en){
+    font-style:italic;
+  }
+  
+  :root {
+    font-family:arial;
+  }

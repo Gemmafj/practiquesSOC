@@ -1,0 +1,4 @@
+div::first-line {color: red; }
+h1::before {content: "Títol "; }
+p::after {content: "."; }
+p::first-letter {text-transform: uppercase; }

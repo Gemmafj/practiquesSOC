@@ -1,0 +1,28 @@
+/* Els enllaços (visitats i no visitats) són de color blau amb el fons gris i sense subratllar. */
+a:link,
+a:visited {
+  color: blue;
+  background-color: gray;
+  text-decoration: none;
+  padding: 3px;
+}
+
+/* Quan hi passem per damunt tindran el fons blau i text blanc   */
+a:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Quan fem clic, abans de soltar es faran més grans   */
+a:active {
+  font-size: larger;
+  color: white;
+  background-color: blue;
+}
+
+/* Quan se situa en un control de formulari <input> tindrà
+una vora vermella puntejada, i un farciment de 2px   */
+input:focus {
+  border: red 2px dotted;
+  padding: 2px;
+}

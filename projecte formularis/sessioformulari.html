@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span{margin-left: 18px;}
+    </style>
+    <script type="text/javascript">
+        function mostrar(seleccion) {
+            document.getElementById("valor2").innerHTML = seleccion;
+        }
+    </script>
+</head>
+<body>
+
+    <p><button><img src="inici.png" alt="Enviar" width="50" height="50">Torna a home</button></p>
+
+<form action="">
+
+   <fieldset>
+        <legend><i><b>Dades personals</i></b></legend>
+        <p>Nom: <input type="text" name="nom"></p>
+        <p>Cognoms: <input type="text" name="cognoms"></p>
+        <p>CP: <input type="text" required pattern="[0-9] {5}" name="cp"></p>
+        <p>CP: <input type="text" required pattern="[0-9] {5}" name="cp" size="4" maxlength="5"></p>
+        <p>Provincia: <input type="text" readonly name="provincia" value="Girona"> </p>
+        <p><button onclick="alert('Acció de Javascript')"> Faci click aquí</button>  <input type="reset"></p>
+        <p><button disabled> No funciona</button></p>
+        <p><button><img src="inici.png" alt="Inici" width="50" height="50">Enviar</button></p>
+    </fieldset>
+<br>
+    <fieldset>
+        <legend><i><b>Dades de contacte</i></b></legend>
+        <p>Telèfon: <input type="text" required pattern="[0-9] {9}" name="tel" size="6" maxlength="9"></p>
+        <p>e-mail: 
+            <input type="email" name="mail"required>
+            <input type="submit" value="OK">
+            
+        <form action="">
+                <p>Web: <input type="url" name="web"> 
+                    <input type="submit" name="ok"></p>
+        
+        <input type="password"> Pasword
+               
+        </form>
+        
+    </fieldset>
+<br>   
+    <fieldset>
+        <legend><i><b> Comanda</i></br></legend>
+        Talla: <br>
+        <br>
+        <input type="radio" name="Talla" value="S">   S <br>
+        <input type="radio" name="Talla" value="M">   M <br>
+        <input type="radio" name="Talla" value="L" checked>   L <br>
+        <input type="radio" name="Talla" value="XL">  XL <br>
+        <p>Quantitat: <input type="text" name="quantitat" size="3" value=1></p>
+        <p>Quantitat: <input type="number" name="quantitat" size="3" value=1 min=1 max=10 step=2><Quantitat:></p>
+        <br>
+
+       Observacions:<br>
+        <textarea rows="4" cols="30"></textarea>
+
+    </fieldset>
+<br>
+
+<form action="">
+    <fieldset>
+        <legend><i><b> Tipus targeta</i></br></legend>
+
+        <label for="idxtext01">Nº Visa</label>
+        <input type="text" id="idxtext"><br>
+
+        <label for="cash1">Visa</label>
+        <input type="radio" name="cash" id="cash1"><br>
+        <label for="cash2">American Expréss</label>
+        <input type="radio" name="cash" id="cash2"><br>
+        <label for="cash3">Master Card</label>
+        <input type="radio" name="cash" id="cash3"><br>
+        
+    </fieldset>
+<br>
+
+</form>
+    <fieldset>
+        <legend><i><b>Navegador</i></b></legend>
+        <p>Quin navegador fas servir?</p>
+            <select>
+                <option value="1"> Internet Explorer </option>
+                <option value="2"> Firefox </option>
+                <option value="3" Selected > Chrome </option> 
+            </select> 
+
+        <br>
+            <p>Serveis:
+                <input type="checkbox" name="n1" >  ERP
+                <input type="checkbox" name="n1" >  CRM
+                <input type="checkbox" name="n1" > FORMACIÓ  
+            </p>
+                
+    </fieldset>
+<br>
+<br>
+    <fieldset>
+        <legend><i><b>Empresa</i></b></legend>
+        <p>Tipus empresa:
+            <input type="text" list="tipusempresa">
+            <datalist id="tipusempresa"> <!--dona opcions a mesura que escrius lletres -->
+                <option value="SA"></option>
+                <option value="SL"></option>
+                <option value="SC"></option>
+            </datalist>
+
+        </p>
+
+    </fieldset>
+<br>
+    <fieldset>
+        <legend><i><b>Gustos</i></b></legend>
+        <p> Quin és el teu color preferit?</p>
+        <input type="color">
+    </fieldset>
+
+</form>
+
+<br>
+
+    <fieldset>
+        <legend><i><b>Sessió 28/1/2020</i></b></legend>
+        <form action="">
+                         
+            <p>Data: <input type="date" name="dataalta"></p>
+            <p>Mes actual: <input type="month" name="mes"></p>
+            <p>Hora: <input type="time" min="11:00" max="23:00" step="900" value="11"></p>
+            <p>Setmana de vacances: <input type="week" name="setmana"></p>
+            <p>Data formulari: <input type="datetime-local"></p>
+            
+        </form>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><i><b>Cursor</i></b></legend>
+        Quantitat sol.licitada: <br>
+        <input name="cursor" type="range" min="1" max="5" value="3" step="1" 
+        style="margin-top: 10px; width: 155px;" 
+        onchange="mostrar(this.value)"><br>
+        <div style="margin-top: -2px;">
+            <span style="margin-left: 2px;">1</span>
+            <span>2</span >
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+<p>Ha escollit...<span id="valor2">3</span></p>
+        </div>
+    </fieldset>
+
+<!--<p>Facturació <input type="range"> nam/-->
+
+</p>
+    
+</body>
+</html>
