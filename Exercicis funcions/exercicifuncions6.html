@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<scr>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/* EXERCICI 6:
+       
+        var comptador = 0;
+        var nom;
+
+        function cambrer (elMeuNom) {
+            if (comptador == 0) {
+                alert ("Hola " + elMeuNom);
+            } else {
+                alert ("En què et puc ajudar " + elMeuNom + "?")
+            }
+            comptador++;
+        }
+        nom = "Gemma";
+        cambrer(nom);
+        cambrer(nom);
+        cambrer(nom);
+        cambrer(nom);    */
+
+/* EXERCICI 7: (is empty = és buida) Hem de fer servir el txt.length
+
+        var str = "";
+        
+
+        function is_empty(str) {
+            var llargada = str.length;
+          if (llargada == 0) {
+              return (true);
+          }  else {
+              return (false);
+          }
+        }
+        alert(is_empty(str));     */
+                
+
+/* EXERCICI 8: Hem d'usar el indexOf
+
+        function posicioA (text) {
+            return text.indexOf("a");
+        }
+        alert(posicioA("Hola bon dia"));   */
+
+//  EXERCICI 9:
+        function repeticionsA(text){
+            var posicioInicial = 0;
+            var repeticions = 0;
+            while(text.indexOf("a",posicioInicial) != -1){
+                repeticions++;
+                posicioInicial = text.indexOf("a",posicioInicial) + 1;
+            }
+            
+            return repeticions;
+
+        }
+
+        alert (repeticionsA("aquest text tindra quatre a"));
+
+        
+
+    </script>
+</body>
+</html>

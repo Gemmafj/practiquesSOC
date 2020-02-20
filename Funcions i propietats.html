@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*Funcions i propietats de cadenes:
+
+Length: es una propietat que retorna la llargada de la cadena */
+    
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    alert(txt.length);
+    /* Una altra manera de cridar-la és aquesta:
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var llargada = txt.length;
+        alert (llargada);  */
+
+/*   indexOf(): es una funció que retorna la posició de la primera
+aparció d’una subcadena dintre d’un altra:    */
+
+var string = "Siusplau troba on està la paraula 'troba'!";
+var posicio = string.indexOf("troba");
+alert(posicio);
+
+/*   Funcions i propietats de cadenes:
+
+lastIndexOf()
+
+search() és bastant igual que l'indexOf, però el search només admet un paràmetre i l'indexOf en pot tenir  més d'un
+    
+    var string = "Siusplau troba on està la paraula 'troba'!";
+    var posicio = string.indexOf("troba,10");
+    alert(posicio);
+
+slice() et retorna el contingut entre dos nº , si es posa en negatiu, comença a comptar pel final
+
+substring() molt semblant a slice però no accepta negatius
+
+substr()
+
+replace() remplaça cadenes, li poses dos parametres ( el que ha de buscar, i el que remplaça)
+
+toUpperCase() 
+
+    </script>
+
+</body>
+</html>
