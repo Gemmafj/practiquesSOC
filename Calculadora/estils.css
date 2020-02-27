@@ -15,7 +15,7 @@
 table{
 	margin:auto;
 	background-color: rgb(160, 140, 49);
-	border-radius: 5px;
+	border-radius: 7px;
 }
 
 .color_display{
@@ -23,7 +23,7 @@ table{
 	background-color:rgb(73, 72, 72);
 	border:medium #FFF;
 	font: "Space Age";
-	color:#0F0;
+	color:rgb(0, 255, 34);
 	font-size:18px;
 	text-align:right;
 	padding:5px;
