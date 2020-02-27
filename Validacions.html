@@ -1,0 +1,318 @@
+<!-- EXEMPLES DE CRIDES DE VALIDACIONS:
+“A MIDA QUE ANEM ESCRIVINT A CADA CAMP”:
+
+<html>
+<head>
+	<script>
+		function valida(){
+			alert('ara hauria de validar')
+		}
+	</script>
+</head>
+<body>
+<form action="desti.html" method="get" name="formu1">
+		Camp 1: <input name="camp1" type="text" onkeyup="valida()"><br> <-- fa l'alert quan deixes de premer les lletres, sinó anirà posant aaaaaaaa ->
+		Camp 2: <input name="camp2" type="text" onkeypress="valida()"> <--fa alert al pitxar la lletra-->
+	<!--	<input type="submit" value="Envia">
+	</form>
+</body>
+</html> -->
+
+
+
+<!-- “QUAN SORTIM DE CADA CAMP”: 
+<html>
+<head>
+	<script>
+		function valida(){
+			alert('ara hauria de validar')
+		}
+	</script>
+</head>
+<body>
+<form action="desti.html" method="get" name="formu1">
+		Camp 1: <input name="camp1" type="text" onchange="valida()"><br>
+		Camp 2: <input name="camp2" type="text" onchange="valida()">
+		<input type="submit" value="Envia">
+	</form>
+</body></html> -->
+
+
+
+<!-- “QUAN ENVIEM EL FORMULARI”: 
+<html>
+<head>
+	<script>
+		function valida(){
+			alert('ara hauria de validar')
+		}
+	</script>
+</head>
+<body>
+<form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+		Camp 1: <input name="camp1" type="text"><br>
+		Camp 2: <input name="camp2" type="text">
+		<input type="submit" value="Envia">
+	</form>
+</body></html>  -->
+
+
+
+<!--VALIDAR QUE UN CAMP DE TEXT NO ESTIGUI BUIT:
+
+<HTML>
+    <head>
+        <script>
+            function valida(){
+    var camp1 = document.forms["formu1"]["camp1"].value;			
+    var camp2 = document.forms["formu1"]["camp2"].value; 
+         alert (camp1.length);
+         alert (camp2.length);
+        
+    if (camp1.length <= 2){
+		alert ('el camp1 es massa curt');
+		return false;
+	}
+	if (camp2.length <= 2){
+		alert ('el camp2 es massa curt');
+		return false;
+	}
+	return true;
+       
+            }
+
+        </script>
+    </head>
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br>
+                Camp 2: <input name="camp2" type="text">
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML> -->
+
+
+<!--VALIDAR QUE UN CAMP DE TEXT TINGUI UNA LLARGADA MÍNIMA:
+<HTML>
+    <head>
+        <script>
+
+    function valida(){
+	    var camp1 = document.forms["formu1"]["camp1"].value;			
+	    var camp2 = document.forms["formu1"]["camp2"].value;
+
+	        if (camp1.length <= 2){
+		        alert ('el camp1 es massa curt');
+		        return false;
+	        }
+	        if (camp2.length.IsNan <= 2){
+		        alert ('el camp2 es massa curt');
+		        return false;
+	        }
+	    return true;
+}
+</script>
+    </head>
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br>
+                Camp 2: <input name="camp2" type="text">
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML> -->
+
+
+<!--VALIDAR QUE UN CAMP DE TEXT SIGUI UN Nº:
+
+<HTML>
+    <head>
+        <script>
+
+    function valida(){
+	    var camp1 = document.forms["formu1"]["camp1"].value;			
+	    var camp2 = document.forms["formu1"]["camp2"].value;
+
+	        if (isNaN(camp1) == true){
+		        alert ('Error, no són nº');
+		        return false;
+	        }
+	        if (isNaN(camp1) == true) {
+		        alert ('Aquest camp no és un nombre');
+		        return false;
+	        }
+	    return true;
+}
+</script>
+    </head>
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br>
+                Camp 2: <input name="camp2" type="text">
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML>
+
+
+<!-- VALIDAR QUE UN CAMP DE TEXT QUE CONTÉ NÚMEROS, I AQUESTS ESTIGUIN DINTRE D'UN RANG CONCRET(p.e entre 0 i 1000):
+
+
+<HTML>
+    <head>
+        <script>
+
+    ********* function valida(){
+	    var camp1 = document.forms["formu1"]["camp1"].value;			
+	    var camp2 = document.forms["formu1"]["camp2"].value;
+
+	        if (isNaN(camp1) == true){
+		        alert ('Error, no són nº');
+		        return false;
+	        }
+	        if (isNaN(camp1) == true) {
+		        alert ('Aquest camp no és un nombre');
+		        return false;
+	        }
+	    return true;
+    } **************************no va
+    function valida(){
+
+        var camp1 = document.forms["formu1"]["camp1"].value;			
+	    var camp2 = document.forms["formu1"]["camp2"].value;
+
+            if (camp1<1 || camp1>1000){
+		    alert ('el camp1 no està a dintre del rang');
+		    return false;
+        }
+            if (camp2<1 || camp2>1000){
+            alert ('el camp2 no està a dintre del rang');
+            return false;
+        }
+        return true;
+}
+
+}
+</script>
+    </head>
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br><br>
+                Camp 2: <input name="camp2" type="text">
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML> -->
+
+
+<!--VALIDAR UN CAMP EMAIL:
+
+<HTML>
+    <head>
+        <script>
+function valida(){
+	var camp1 = document.forms["formu1"]["camp1"].value;			
+	//var camp2 = document.forms["formu1"]["camp2"].value;
+
+	var posArroba = camp1.indexOf("@");
+	var posPunt = camp1.indexOf(".",posArroba);
+	if (posArroba<0 || posPunt<0){
+		alert ('el camp1 no es un email correcte');
+		return false;
+    }
+    //var camp1 = document.forms["formu1"]["camp1"].value;			
+	var camp2 = document.forms["formu1"]["camp2"].value;
+
+    var posArroba = camp2.indexOf("@");
+	var posPunt = camp2.indexOf(".",posArroba);
+	if (posArroba<0 || posPunt<0){
+		alert ('el camp2 no es un email correcte');
+		return false;
+	}
+
+	return true;
+  
+}
+</script>
+    </head>
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br><br>
+                Camp 2: <input name="camp2" type="text">
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML>-->
+
+
+<!-- VALIDACIONS CARÀCTER A CARÀCTER: 
+<HTML>
+    <head>
+        <script>
+            function valida(){
+
+	var camp1 = document.forms["formu1"]["camp1"].value;			
+	
+	    for (var i = 0; i < camp1.length; i++) {
+            caracter = camp1[i];
+            alert(caracter);
+    }
+
+	return true;
+    }
+
+        </script>
+
+    </head>
+
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br><br>
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML>  -->
+
+
+<!-- CONDICIONS: SI I<8 HA DE SER CARÀCTER Nº
+            SI I ==8 no numero -->
+
+<HTML>
+    <head>
+        <script>
+            function valida(){
+
+	var camp1 = document.forms["formu1"]["camp1"].value;			
+	
+	    if (i < 8) {
+            caracter = camp1[Number];
+
+            
+        }
+    }
+
+        </script>
+
+    </head>
+
+    <body>
+        <form action="desti.html" method="get" name="formu1" onsubmit="return valida()">
+                Camp 1: <input name="camp1" type="text"><br><br>
+                <input type="submit" value="Envia">
+            </form>
+    </body>
+
+</HTML>
+
+
+
+
+
+
